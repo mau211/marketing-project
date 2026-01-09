@@ -23,37 +23,82 @@
       /* You may write styles inside this <style> tag or within `css/style.css`. */
     </style>
   </head>
-  <body class="flex">
+  <body
+    id="layout"
+    class="flex flex-col items-center gradient-to-b from-gray-50 to-[#d2d6db] py-[120px] b-image"
+  >
+    <!-- Add your site or application content here -->
     <div
-      id="layout"
-      class="flex flex-col flex-auto items-center bg-gradient-to-b from-gray-50 to-[#d2d6db] py-[200px]"
+      id="blog-card"
+      class="flex flex-col justify-center w-[340px] overflow-hidden rounded-lg b-shadow"
     >
-      <div id="card" class="flex flex-col gap-4 w-[340px] bg-white p-6 rounded-lg shadow-card">
-        <div class="flex flex-row gap-4">
-          <div class="flex flex-col justify-center items-center">
-            <img
-              src="./img/britneyspears.png"
-              alt="Britney profile pic"
-              class="w-12 h-12 rounded-full object-cover shrink-0"
-            />
-          </div>
-          <div class="flex flex-col flex-1">
-            <div class="flex flex-row flex-1 text-lg font-semibold text-neutral-900">
-              <p>Britney Spears</p>
+      <img
+        src="./img/spacejoy-YqFz7UMm8qE-unsplash.jpg"
+        alt=""
+        class="h72"
+        style="object-fit: cover; align-self: stretch"
+      />
+      <div
+        id="card-bottom"
+        class="flex flex-col self-stretch py-6 px-4 gap-3 bg-white"
+      >
+        <div class="flex flex-col self-stretch gap-2">
+          <div class="flex">
+            <div
+              id="badge"
+              class="flex items-center bg-green-50 px-2 py-0.5 rounded-full border border-solid border-green-200"
+            >
+              <span class="font-normal text-sm text-center text-green-700"
+                >Interior</span
+              >
             </div>
-            <div class="flex flex-row flex-1 text-sm font-normal text-neutral-600">
-              <p>@itsBritney</p>
-            </div>    
-          </div>         
+          </div>
+          <span id="title" class="font-semibold text-lg text-neutral-900"
+            >Top 5 Living Room Inspirations</span
+          >
         </div>
-        <div class="flex flex-row flex-1 text-base font-normal text-neutral-600">
-        <p>Hiii everyone 🌹 So I'm not really a tech person or whatever but I found this website with all these beautiful images 
-          and I just had to share!! They make me feel things you know?? Like art is supposed to make you FEEL something and these
-           really do. I'm using them for my projects and it's giving everything it needs to give 💅 God bless and goodnight lol</p>
+        <div class="flex flex-col self-stretch gap-6">
+          <p
+            id="excerpt"
+            class="font-medium text-base text-neutral-600 line-clamp-3"
+          >
+            Curated vibrants colors for your living, make it pop & calm in the
+            same time.
+          </p>
+          <a
+            id="link"
+            href="https://www.elledecor.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="flex flex-row items-center gap-[6px] font-medium text-base text-indigo-700"
+          >
+            <span>Read More</span>
+            <div class="flex flex-col justify-center items-center h-5">
+              <svg
+                class="text-indigo-700"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+                  fill="#4338CA"
+                />
+              </svg>
+            </div>
+          </a>
         </div>
       </div>
     </div>
 
+    <!-- Interior
+      Top 5 Living Room Inspirations
+      Curated vibrants colors for your living, make it pop & calm in the same time.
+      Read more -->
+
+    <!-- Attribute this challenge to yourself! -->
     <div class="credits" data-gfe-screenshot-exclude="true">
       A challenge by
       <a
@@ -64,7 +109,7 @@
       <a
         href="https://www.greatfrontend.com/projects/u/username"
         target="_blank"
-        >Mariela Chavez</a
+        >Your Name</a
       >.
     </div>
     <script src="js/index.js"></script>

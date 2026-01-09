@@ -1,5 +1,6 @@
 /* Put any custom CSS styles here.  */
 /* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+
 body {
   margin: 0;
   font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
@@ -16,11 +17,9 @@ body {
   box-sizing: border-box;
 }
 
-.b-shadow {
-  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.1);
-}
-.b-image {
-  background-image: linear-gradient(to bottom, #f9fafb, #d2d6db);
+.shadow-card {
+  box-shadow: 0px 1px 2px -1px rgb(0 0 0 / 0.1),
+    0px 1px 3px 0px rgb(0 0 0 / 0.1);
 }
 
 .credits {
